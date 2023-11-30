@@ -4,7 +4,7 @@ const zdaneni = prompt ("Zadejte procento zdanění: ");
 function taxed (castka, zdaneni) {
     const castkaCislo = parseFloat(castka);
     const zdaneniCislo = parseFloat(zdaneni);
-    const celkovaCastka = castka * (1 * zdaneni / 100)
+    const celkovaCastka = castka * (1 - zdaneni / 100)
 
 return Math.round (celkovaCastka);
 }
